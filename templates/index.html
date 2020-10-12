@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <h1>Kadeem's Favorite Artists: </h1>    
+
+        <ol>
+            
+            {%for i in range(0, listlen)%}
+                <li>{{entirelist[i]}}</li>
+                <img src="{{ piclist[i] }}">
+            {%endfor%}
+        </ol>
+        
+    </body>
+</html>
